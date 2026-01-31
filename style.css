@@ -89,8 +89,9 @@
   }
 
   img {
-    width: 100%; /*avoid big width images to make horizontal scrolling*/
-    height: auto; /* avoid squized images and keep the ratio useful for responsive design*/
+    /* display: block; */
+    max-width: 100%;
+    height: auto;
   }
 
   h1,
@@ -109,7 +110,7 @@
     text-decoration: none;
   }
 
-  header ul {
+  header ul,footer ul {
     margin: 0;
     padding: 0;
 
