@@ -1,3 +1,39 @@
-body{
-    background-color: blue;
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /*include padding to the final elements width and height usefull for sizing*/
+}
+
+body {
+  margin: 0; /* remove default body margin set out to 0*/
+  min-height: 50vh; /*temporary to add scrolling the the element at botom like footer*/
+}
+
+img {
+  width: 100%; /*avoid big width images to make horizontal scrolling*/
+  height: auto; /* avoid squized images and keep the ratio useful for responsive design*/
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  
+  li {
+    list-style-type: none;
+  }
 }
